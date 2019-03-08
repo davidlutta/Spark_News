@@ -1,7 +1,6 @@
 
 package com.davidezekiel.Models.Everything;
 
-import com.davidezekiel.Models.Source;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 

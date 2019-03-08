@@ -1,5 +1,5 @@
 
-package com.davidezekiel.Models;
+package com.davidezekiel.Models.Everything;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
