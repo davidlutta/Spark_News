@@ -3,8 +3,8 @@
     <h1 class="logoText">Spark News</h1>
 </div>
 
-#foreach ($NewsItem in $News)
+#foreach ($newsItem in $news)
 <ul class="list-unstyled">
-    <li class="list-unstyled">$NewsItem.getArticles()</li>
+    <li class="list-unstyled">$newsItem.getTitle()</li>
 </ul>
 #end

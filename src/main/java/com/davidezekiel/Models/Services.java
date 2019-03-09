@@ -1,6 +1,6 @@
 package com.davidezekiel.Models;
 
-import com.davidezekiel.Models.Everything.Results;
+import com.davidezekiel.Models.Everything.Article;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
@@ -21,22 +21,22 @@ public class Services {
     static Logger logger = LoggerFactory.getLogger(Services.class);
 
     //For EveryStuff
-    public static List<Results> processAllStuff(Response response){
-        List<Results> results = new ArrayList<>();
+    public static List<Article> processAllStuff(Response response) {
+        ArrayList<Article> results = new ArrayList<>();
         try {
             String jsonData = response.body().string();
             logger.info("jsonData: " + jsonData);
             if (response.isSuccessful()){
                 JSONObject jsonObject = new JSONObject(jsonData);
                 JSONArray jsonArray = jsonObject.getJSONArray("articles");
-                Type collectionType = new TypeToken<List<Results>>(){}.getType();
+                Type collectionType = new TypeToken<List<Article>>() {
+                }.getType();
                 Gson gson = new GsonBuilder().create();
                 results = gson.fromJson(jsonArray.toString(),collectionType);
             }
         } catch (JSONException | NullPointerException | IOException e){
             e.printStackTrace();
         }
-//        logger.info("jsonArray: " + results);
         return results;
     }
 }

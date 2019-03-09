@@ -1,4 +1,4 @@
-import com.davidezekiel.Models.Everything.Results;
+import com.davidezekiel.Models.Everything.Article;
 import com.davidezekiel.Models.Services;
 import okhttp3.HttpUrl;
 import okhttp3.OkHttpClient;
@@ -28,26 +28,18 @@ public class App {
         get("/",(request, response) -> {
             Map<String,Object> model = new HashMap<>();
 
-            HttpUrl.Builder everyStuffBuilder = HttpUrl.parse(Constants.BASE_URL).newBuilder();
-            everyStuffBuilder.addEncodedPathSegment(Constants.EVERYTHING_ENDPOINT);
-            everyStuffBuilder.addEncodedPathSegment(Constants.API_PREFIX);
-            everyStuffBuilder.addEncodedPathSegment(Constants.API_KEY);
+            HttpUrl.Builder everyStuffBuilder = HttpUrl.parse(Constants.BASE_EVERYTHING_URL).newBuilder();
 
-
-//            String url = everyStuffBuilder.build().toString();
-            String url = "https://newsapi.org/v2/everything?q=bitcoin&apiKey=b2957d4f828d426eb6f76054f45ca235";
+            String url = everyStuffBuilder.build().toString();
             logger.info("The URL is: "+url);
 
             Request request1 = new Request.Builder()
                     .url(url)
                     .build();
             try (Response response1 = okHttpClient.newCall(request1).execute()){
-                List<Results> results = Services.processAllStuff(response1);
+                List<Article> results = Services.processAllStuff(response1);
                 if (results != null) {
-                    model.put("News",results);
-                    for (int i = 0; i < results.size(); i++) {
-                        logger.info("Data: "+results.get(i).getArticles());
-                    }
+                    model.put("news", results);
                 }
             } catch (IOException e){
                 e.printStackTrace();
