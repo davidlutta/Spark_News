@@ -3,8 +3,22 @@
     <h1 class="logoText">Spark News</h1>
 </div>
 
-#foreach ($newsItem in $news)
-<ul class="list-unstyled">
-    <li class="list-unstyled">$newsItem.getTitle()</li>
-</ul>
-#end
+<div class="container">
+    <div class="row">
+        #foreach ($newsItem in $news)
+            <div class="col-lg-6" style="padding: 10px">
+                <div class="card">
+                    <div class="card-title">
+                        <h2>$newsItem.getTitle()</h2>
+                    </div>
+                    <div class="card-img"><img src="$newsItem.getUrlToImage()" class="card-img" alt="Image"></div>
+                    <div class="card-body"><p>$newsItem.getDescription()</p></div>
+                    <div class="card-footer">
+                        <p><strong>$newsItem.getAuthor()</strong></p>
+                        <p>$newsItem.getPublishedAt()</p>
+                    </div>
+                </div>
+            </div>
+        #end
+    </div>
+</div>
