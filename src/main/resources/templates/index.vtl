@@ -1,23 +1,27 @@
-<div class="intro">
-    <img src="assests/imgs/logo.png" alt="Logo" class="img-fluid" height="50px" width="50px" id="introImg">
-    <h1 class="logoText">Spark News</h1>
-</div>
 
 <div class="container">
     <div class="row">
         #foreach ($newsItem in $news)
             <div class="col-lg-6" style="padding: 10px">
-                <div class="card">
-                    <div class="card-title">
-                        <h2>$newsItem.getTitle()</h2>
+                <a href="$newsItem.getUrl()" class="link" style="text-decoration: none; color: #1d2124" target="_blank">
+                    <div class="card">
+                        <div class="card-title">
+                            <h2>$newsItem.getTitle()</h2>
+                        </div>
+                        <div class="card-img"><img src="$newsItem.getUrlToImage()" class="card-img" alt="Image"></div>
+                        <div class="card-body"><p>$newsItem.getDescription()</p></div>
+                        <div class="card-footer">
+                            <p><strong>
+                                #if($newsItem.getAuthor().length() >= 1)
+                                    $newsItem.getAuthor()
+                                #else
+                                    Annonymous.
+                                #end
+                            </strong></p>
+                            <p>$newsItem.getPublishedAt()</p>
+                        </div>
                     </div>
-                    <div class="card-img"><img src="$newsItem.getUrlToImage()" class="card-img" alt="Image"></div>
-                    <div class="card-body"><p>$newsItem.getDescription()</p></div>
-                    <div class="card-footer">
-                        <p><strong>$newsItem.getAuthor()</strong></p>
-                        <p>$newsItem.getPublishedAt()</p>
-                    </div>
-                </div>
+                </a>
             </div>
         #end
     </div>

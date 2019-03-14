@@ -49,5 +49,30 @@ public class App {
             model.put("template","templates/index.vtl");
             return new ModelAndView(model,layout);
         }, new VelocityTemplateEngine());
+
+        get("/tech",(request, response) -> {
+            String techVTLpagepath = "templates/tech.vtl";
+            Map<String,Object> model = new HashMap<>();
+
+            HttpUrl.Builder techBuilder = HttpUrl.parse(Constants.BASE_TECH_URL).newBuilder();
+
+            String url = techBuilder.build().toString();
+
+            Request techRequest = new Request.Builder()
+                    .url(url)
+                    .build();
+
+            try(Response techResponse = okHttpClient.newCall(techRequest).execute()){
+                List<Article> techResults = Services.processTechNews(techResponse);
+                if (techResults != null){
+                    model.put("news",techResults);
+                }
+            } catch (IOException e){
+                e.printStackTrace();
+                logger.info(e.getMessage());
+            }
+            model.put("template",techVTLpagepath);
+            return new ModelAndView(model,layout);
+        }, new VelocityTemplateEngine());
     }
 }
