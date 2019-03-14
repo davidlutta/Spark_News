@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="43e1f6d4-7ccc-4480-9cf1-dd2dc2751501" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/health.vtl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/App.java" afterDir="false" />
-    </list>
+    <list default="true" id="43e1f6d4-7ccc-4480-9cf1-dd2dc2751501" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -22,11 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Constants.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="136" selection-start-line="7" selection-start-column="136" selection-end-line="7" selection-end-column="136" />
+            <state relative-caret-position="15">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -52,8 +48,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/layout.vtl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="18" column="54" selection-start-line="18" selection-start-column="54" selection-end-line="18" selection-end-column="54" />
+            <state relative-caret-position="307">
+              <caret line="22" column="56" selection-start-line="22" selection-start-column="56" selection-end-line="22" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -61,7 +57,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
+            <state relative-caret-position="1192">
               <caret line="151" column="51" selection-start-line="151" selection-start-column="51" selection-end-line="151" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -70,15 +66,24 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/tv&amp;showbiz.vtl">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/health.vtl">
           <provider selected="true" editor-type-id="text-editor">
             <state>
+              <caret selection-end-line="27" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -122,12 +127,13 @@
         <option value="$PROJECT_DIR$/src/main/resources/templates/index.vtl" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/tech.vtl" />
         <option value="$PROJECT_DIR$/src/main/java/com/davidezekiel/Models/Services.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/layout.vtl" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/business.vtl" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/sports.vtl" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/health.vtl" />
-        <option value="$PROJECT_DIR$/src/main/java/Constants.java" />
         <option value="$PROJECT_DIR$/src/main/java/App.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/tv&amp;showbiz.vtl" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/layout.vtl" />
+        <option value="$PROJECT_DIR$/src/main/java/Constants.java" />
       </list>
     </option>
   </component>
@@ -247,7 +253,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/.gitignore" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552577613659" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552577912229" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -301,7 +307,7 @@
       <updated>1552056773886</updated>
       <workItem from="1552056775775" duration="14088000" />
       <workItem from="1552128696135" duration="5064000" />
-      <workItem from="1552566382409" duration="8570000" />
+      <workItem from="1552566382409" duration="8879000" />
     </task>
     <task id="LOCAL-00001" summary="Add functionality to fetch and receive data">
       <created>1552131790539</created>
@@ -335,7 +341,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27722000" />
+    <option name="totallyTimeSpent" value="28031000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="26" width="1366" height="742" extended-state="6" />
@@ -346,9 +352,9 @@
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Learn" order="4" />
       <window_info id="Designer" order="5" />
-      <window_info active="true" content_ui="combo" id="Project" order="6" sideWeight="0.49837133" visible="true" weight="0.25757575" />
+      <window_info content_ui="combo" id="Project" order="6" sideWeight="0.49837133" visible="true" weight="0.25757575" />
       <window_info id="Structure" order="7" sideWeight="0.50162864" side_tool="true" weight="0.25378788" />
-      <window_info anchor="bottom" id="Terminal" order="0" weight="0.32899022" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.32899022" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Docker" order="2" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="3" weight="0.32899022" />
@@ -488,13 +494,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/public/css/App.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1185">
-          <caret line="88" column="5" selection-start-line="88" selection-start-column="5" selection-end-line="88" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/tech.vtl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -534,13 +533,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/layout.vtl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="18" column="54" selection-start-line="18" selection-start-column="54" selection-end-line="18" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/sports.vtl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -566,6 +558,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/health.vtl">
       <provider selected="true" editor-type-id="text-editor">
         <state>
+          <caret selection-end-line="27" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -573,16 +566,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Constants.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/tv&amp;showbiz.vtl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="136" selection-start-line="7" selection-start-column="136" selection-end-line="7" selection-end-column="136" />
+        <state relative-caret-position="270">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/layout.vtl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="22" column="56" selection-start-line="22" selection-start-column="56" selection-end-line="22" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/css/App.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1185">
+          <caret line="88" column="5" selection-start-line="88" selection-start-column="5" selection-end-line="88" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/App.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
+        <state relative-caret-position="1192">
           <caret line="151" column="51" selection-start-line="151" selection-start-column="51" selection-end-line="151" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -590,8 +601,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/tv&amp;showbiz.vtl">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
