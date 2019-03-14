@@ -103,7 +103,7 @@ public class App {
             String path = "templates/sports.vtl";
             Map<String,Object> model = new HashMap<>();
 
-            HttpUrl.Builder sportsBuilder = HttpUrl.parse(Constants.BASE_BUSINESS_URL).newBuilder();
+            HttpUrl.Builder sportsBuilder = HttpUrl.parse(Constants.BASE_SPORTS_URL).newBuilder();
 
             String url = sportsBuilder.build().toString();
 
@@ -124,7 +124,52 @@ public class App {
             return new ModelAndView(model,layout);
         },new VelocityTemplateEngine());
 
+        get("/health",(request, response) -> {
+            String path = "templates/health.vtl";
+            Map<String,Object> model = new HashMap<>();
+            HttpUrl.Builder healthBuilder = HttpUrl.parse(Constants.BASE_HEALTH_URL).newBuilder();
 
+            String url = healthBuilder.build().toString();
 
+            Request healthRequest = new Request.Builder()
+                    .url(url)
+                    .build();
+
+            try(Response healthResponse = okHttpClient.newCall(healthRequest).execute()){
+                List<Article> healthResults = Services.processTechNews(healthResponse);
+                if (healthResults != null){
+                    model.put("news",healthResults);
+                }
+            } catch (IOException e){
+                e.printStackTrace();
+                logger.info(e.getMessage());
+            }
+            model.put("template",path);
+            return new ModelAndView(model,layout);
+        },new VelocityTemplateEngine());
+
+        get("/tv&showbiz",(request, response) -> {
+            String path = "templates/tv&showbiz.vtl";
+            Map<String,Object> model = new HashMap<>();
+            HttpUrl.Builder tvBuilder = HttpUrl.parse(Constants.BASE_TVSHOWBIZ_URL).newBuilder();
+
+            String url = tvBuilder.build().toString();
+
+            Request tvRequest = new Request.Builder()
+                    .url(url)
+                    .build();
+
+            try(Response tvResponse = okHttpClient.newCall(tvRequest).execute()){
+                List<Article> tvResults = Services.processTechNews(tvResponse);
+                if (tvResults != null){
+                    model.put("news",tvResults);
+                }
+            } catch (IOException e){
+                e.printStackTrace();
+                logger.info(e.getMessage());
+            }
+            model.put("template",path);
+            return new ModelAndView(model,layout);
+        },new VelocityTemplateEngine());
     }
 }
