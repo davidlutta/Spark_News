@@ -76,5 +76,18 @@ public class Services {
         return businessResults;
     }
 
-
+    public static List<Article> processSportsNews(Response response) throws IOException{
+        ArrayList<Article> sportsResults = new ArrayList<>();
+        try {
+            String jsonData = response.body().string();
+            JSONObject jsonObject = new JSONObject(jsonData);
+            JSONArray jsonArray = jsonObject.getJSONArray("articles");
+            Type collectionType = new TypeToken<List<Article>>(){}.getType();
+            Gson gson = new GsonBuilder().create();
+            sportsResults = gson.fromJson(jsonArray.toString(),collectionType);
+        } catch (JSONException | NullPointerException e){
+            logger.info(e.getMessage());
+        }
+        return sportsResults;
+    }
 }
