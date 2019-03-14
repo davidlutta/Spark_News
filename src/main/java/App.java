@@ -74,5 +74,28 @@ public class App {
             model.put("template",techVTLpagepath);
             return new ModelAndView(model,layout);
         }, new VelocityTemplateEngine());
+
+        get("/business",(request, response) -> {
+            String path = "templates/business.vtl";
+            Map<String,Object> model = new HashMap<>();
+            HttpUrl.Builder businessBuilder = HttpUrl.parse(Constants.BASE_BUSINESS_URL).newBuilder();
+
+            String url = businessBuilder.build().toString();
+
+            Request businessRequest = new Request.Builder()
+                    .url(url)
+                    .build();
+
+            try(Response businessResponse = okHttpClient.newCall(businessRequest).execute()){
+                List<Article> businessResults = Services.processTechNews(businessResponse);
+                if (businessResults != null){
+                    model.put("news",businessResults);
+                }
+            } catch (IOException e){
+                e.printStackTrace();
+                logger.info(e.getMessage());
+            }
+            return new ModelAndView(model,layout);
+        },new VelocityTemplateEngine());
     }
 }

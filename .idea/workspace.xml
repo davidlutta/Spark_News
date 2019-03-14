@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="43e1f6d4-7ccc-4480-9cf1-dd2dc2751501" name="Default Changelist" comment="Add cards to UI">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/davidezekiel/Models/Services.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/davidezekiel/Models/Services.java" afterDir="false" />
+    <list default="true" id="43e1f6d4-7ccc-4480-9cf1-dd2dc2751501" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/layout.vtl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/layout.vtl" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -23,8 +25,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Constants.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="130" lean-forward="true" selection-start-line="3" selection-start-column="130" selection-end-line="3" selection-end-column="130" />
+            <state relative-caret-position="60">
+              <caret line="4" column="44" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -61,15 +63,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/public/js/App.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/layout.vtl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="19" column="50" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
+            <state relative-caret-position="247">
+              <caret line="18" column="54" selection-start-line="18" selection-start-column="54" selection-end-line="18" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -77,8 +74,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="75" column="41" lean-forward="true" selection-start-line="75" selection-start-column="41" selection-end-line="75" selection-end-column="41" />
+            <state relative-caret-position="322">
+              <caret line="91" column="49" lean-forward="true" selection-start-line="91" selection-start-column="49" selection-end-line="91" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -87,10 +84,15 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/business.vtl">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/davidezekiel/Models/Services.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="108" column="5" lean-forward="true" selection-start-line="108" selection-start-column="5" selection-end-line="108" selection-end-column="5" />
+            <state relative-caret-position="442">
+              <caret line="124" column="35" selection-start-line="124" selection-start-column="35" selection-end-line="124" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -151,13 +153,13 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/resources/public/js/App.js" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/Tech.vtl" />
-        <option value="$PROJECT_DIR$/src/main/java/Constants.java" />
-        <option value="$PROJECT_DIR$/src/main/java/App.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/layout.vtl" />
         <option value="$PROJECT_DIR$/src/main/resources/public/css/App.css" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/index.vtl" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/tech.vtl" />
         <option value="$PROJECT_DIR$/src/main/java/com/davidezekiel/Models/Services.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/layout.vtl" />
+        <option value="$PROJECT_DIR$/src/main/java/Constants.java" />
+        <option value="$PROJECT_DIR$/src/main/java/App.java" />
       </list>
     </option>
   </component>
@@ -277,7 +279,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/.gitignore" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552575655944" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552575968209" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -331,7 +333,7 @@
       <updated>1552056773886</updated>
       <workItem from="1552056775775" duration="14088000" />
       <workItem from="1552128696135" duration="5064000" />
-      <workItem from="1552566382409" duration="6744000" />
+      <workItem from="1552566382409" duration="7348000" />
     </task>
     <task id="LOCAL-00001" summary="Add functionality to fetch and receive data">
       <created>1552131790539</created>
@@ -347,11 +349,25 @@
       <option name="project" value="LOCAL" />
       <updated>1552133609931</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add health service">
+      <created>1552575657118</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1552575657118</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Add Tv and showbiz service">
+      <created>1552575813446</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1552575813446</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25896000" />
+    <option name="totallyTimeSpent" value="26500000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="26" width="1366" height="742" extended-state="6" />
@@ -362,9 +378,9 @@
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Learn" order="4" />
       <window_info id="Designer" order="5" />
-      <window_info content_ui="combo" id="Project" order="6" sideWeight="0.49837133" visible="true" weight="0.25757575" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" sideWeight="0.49837133" visible="true" weight="0.25757575" />
       <window_info id="Structure" order="7" sideWeight="0.50162864" side_tool="true" weight="0.25378788" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.32899022" />
+      <window_info anchor="bottom" id="Terminal" order="0" weight="0.32899022" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Docker" order="2" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="3" weight="0.32899022" />
@@ -401,7 +417,9 @@
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="Add functionality to fetch and receive data" />
     <MESSAGE value="Add cards to UI" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add cards to UI" />
+    <MESSAGE value="Add health service" />
+    <MESSAGE value="Add Tv and showbiz service" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Tv and showbiz service" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -468,30 +486,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="130" lean-forward="true" selection-start-line="3" selection-start-column="130" selection-end-line="3" selection-end-column="130" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="75" column="41" lean-forward="true" selection-start-line="75" selection-start-column="41" selection-end-line="75" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/layout.vtl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="19" column="50" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/davidezekiel/Models/Everything/Article.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -530,13 +524,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/davidezekiel/Models/Services.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="108" column="5" lean-forward="true" selection-start-line="108" selection-start-column="5" selection-end-line="108" selection-end-column="5" />
+        <state relative-caret-position="442">
+          <caret line="124" column="35" selection-start-line="124" selection-start-column="35" selection-end-line="124" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/layout.vtl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="18" column="54" selection-start-line="18" selection-start-column="54" selection-end-line="18" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="44" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="91" column="49" lean-forward="true" selection-start-line="91" selection-start-column="49" selection-end-line="91" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/business.vtl">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
