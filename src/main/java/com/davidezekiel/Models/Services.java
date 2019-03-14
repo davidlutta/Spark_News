@@ -107,4 +107,21 @@ public class Services {
         }
         return healthResults;
     }
+
+    //For TV&Showbiz
+    public static List<Article> processTvShowbizNews(Response response) throws IOException {
+        ArrayList<Article> TvShowbizNewsResults = new ArrayList<>();
+        try {
+            String jsonData = response.body().string();
+            JSONObject jsonObject = new JSONObject(jsonData);
+            JSONArray jsonArray = jsonObject.getJSONArray("articles");
+            Type collectionType = new TypeToken<List<Article>>() {
+            }.getType();
+            Gson gson = new GsonBuilder().create();
+            TvShowbizNewsResults = gson.fromJson(jsonArray.toString(), collectionType);
+        } catch (JSONException | NullPointerException e) {
+            logger.info(e.getMessage());
+        }
+        return TvShowbizNewsResults;
+    }
 }
