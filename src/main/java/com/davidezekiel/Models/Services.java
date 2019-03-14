@@ -3,7 +3,6 @@ package com.davidezekiel.Models;
 import com.davidezekiel.Models.Everything.Article;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.google.gson.JsonArray;
 import com.google.gson.reflect.TypeToken;
 import okhttp3.Response;
 import org.json.JSONArray;
@@ -76,6 +75,7 @@ public class Services {
         return businessResults;
     }
 
+    //For Sports
     public static List<Article> processSportsNews(Response response) throws IOException{
         ArrayList<Article> sportsResults = new ArrayList<>();
         try {
@@ -89,5 +89,22 @@ public class Services {
             logger.info(e.getMessage());
         }
         return sportsResults;
+    }
+
+    //For Health
+    public static List<Article> processHealthNews(Response response) throws IOException {
+        ArrayList<Article> healthResults = new ArrayList<>();
+        try {
+            String jsonData = response.body().string();
+            JSONObject jsonObject = new JSONObject(jsonData);
+            JSONArray jsonArray = jsonObject.getJSONArray("articles");
+            Type collectionType = new TypeToken<List<Article>>() {
+            }.getType();
+            Gson gson = new GsonBuilder().create();
+            healthResults = gson.fromJson(jsonArray.toString(), collectionType);
+        } catch (JSONException | NullPointerException e) {
+            logger.info(e.getMessage());
+        }
+        return healthResults;
     }
 }
