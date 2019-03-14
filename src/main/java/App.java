@@ -95,7 +95,36 @@ public class App {
                 e.printStackTrace();
                 logger.info(e.getMessage());
             }
+            model.put("template",path);
             return new ModelAndView(model,layout);
         },new VelocityTemplateEngine());
+
+        get("/sports",(request, response) -> {
+            String path = "templates/sports.vtl";
+            Map<String,Object> model = new HashMap<>();
+
+            HttpUrl.Builder sportsBuilder = HttpUrl.parse(Constants.BASE_BUSINESS_URL).newBuilder();
+
+            String url = sportsBuilder.build().toString();
+
+            Request sportsRequest = new Request.Builder()
+                    .url(url)
+                    .build();
+
+            try(Response sportsResponse = okHttpClient.newCall(sportsRequest).execute()){
+                List<Article> sportsResults = Services.processTechNews(sportsResponse);
+                if (sportsResults != null){
+                    model.put("news",sportsResults);
+                }
+            } catch (IOException e){
+                e.printStackTrace();
+                logger.info(e.getMessage());
+            }
+            model.put("template",path);
+            return new ModelAndView(model,layout);
+        },new VelocityTemplateEngine());
+
+
+
     }
 }
